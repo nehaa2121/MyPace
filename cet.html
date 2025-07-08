@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>MCA CET STUDY</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body{
+                background-color: rgb(144, 32, 32);
+            }
+            h1{
+                text-align: center;
+                color: blanchedalmond;
+                background-color: rgb(175, 65, 65);
+                margin:  0px 230px 30px 230px ;
+                padding: 20px;
+                border-radius: 7px;
+            }
+            
+            .main{
+                background-color: brown;
+               padding: 20px;
+               border-radius: 10px;
+            }
+            h3{
+                background-color: bisque;
+                display: inline;
+                padding: 10px;
+                border-radius: 20px;
+
+            }
+            .div1{
+                background-color: rgb(219, 77, 77);
+                border-radius: 15px;
+                margin-bottom: 40px;
+                margin: 20px;
+                padding: 20px;
+            }
+            li{
+                padding: 2px;
+                
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+    <h1>MAHMCA-CET</h1>
+    </header>
+    <div class="main">
+        
+    <h3>
+        SUBJECTS:
+    </h3>
+    <div class="div1">
+    <ol>
+        <li>Mathematics</li>
+        <li>Logical</li>
+        <li>Reasoning</li>
+        <li>English</li>
+        <li>Computer Concepts</li>
+    </ol></div>
+        
+    
+    <h3>WEIGHTAGE:</h3>
+    <div class="div1">
+<table border="1px">
+    <tr>
+        <th>SUBJECTS</th>
+        <th>NO.OF QUESTIONS</th>
+        <th>MARKS PER QUESTIONS</th>
+        <th>MAXIMUM MARKS</th>
+    </tr>
+    <tr>
+        <td>MATHS</td>
+        <td>30</td>
+        <td>2</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>LOGICAL</td>
+        <td>30</td>
+        <td>2</td>
+        <td>60</td>
+    </tr>
+    <tr>
+        <td>ENGLISH</td>
+        <td>20</td>
+        <td>2</td>
+        <td>40</td>
+    </tr>
+    <tr>
+        <td>COMPUTER</td>
+        <td>20</td>
+        <td>2</td>
+        <td>40</td>
+    </tr>     
+</table>
+    </div>
+        <h3>TIME DIVIDE</h3>
+        <div class="div1">
+          <ul>
+            <li>MATHS = 2hrs daily</li>
+            <li>LOGICAL = 1hr daily</li>
+            <li>ENGLISH = 1hr daily</li>
+            <li>COMPUTER = 1-2hrs daily</li>
+          </ul>
+        </div>
+ 
+<h3>SYLLABUS</h3>
+   <div class="div1">
+    <ol>
+        <li>MATHEMATICS:-</li>
+   <label><ul><li>ALGEBRA:- </li>
+    <label><input type="checkbox" class="save-checkbox" data-id="set-theory">
+    Set Theory</label><br>
+   <label><input type="checkbox" class="save-checkbox" data-id="Relations">
+    Relations</label><br>
+    <label><input type="checkbox" class="save-checkbox" data-id="function">
+    Functions</label><br>
+    <label><input type="checkbox" class="save-checkbox" data-id="complex-numbers">Complex Numbers</label><br>
+    <label><input type="checkbox" class="save-checkbox" data-id="Quadratic">Quadratic Equations</label><br>
+    <label><input type="checkbox" class="save-checkbox" data-id="Binomial">Binomial Theorem</label><br>
+    <label><input type="checkbox">Logarithms</label>
+        <li>COORDINATE GEOMENTRY</li>
+        <label><input type="checkbox" class="save-checkbox" data-id="straightlines">Straight Lines</label><br>
+        <label><input type="checkbox" class="save-checkbox" data-id="circles">Circles</label><br>
+        <label><input type="checkbox" class="save-checkbox" data-id="Parabolas"> Parabolas,Ellipse & Hyperbolas</label>
+        <li>CALCULUS:-</li>
+ <label><input type="checkbox" class="save-checkbox" data-id="limits">Limits</label><br>
+  <label><input type="checkbox" class="save-checkbox" data-id="continuity">Continuity</label><br>
+   <label><input type="checkbox" class="save-checkbox" data-id="differentiation">Differentiation</label><br>
+    <label><input type="checkbox" class="save-checkbox" data-id="maxima">Maxima & Minima</label><br>
+    <label><input type="checkbox" class="save-checkbox" data-id="integration">Integration</label>
+</ol>
+</ul>
+    </div>
+    </div>
+    
+  <script>
+    // Load saved checkbox states
+    window.onload = function () {
+      const checkboxes = document.querySelectorAll('.save-checkbox');
+      checkboxes.forEach(cb => {
+        const id = cb.getAttribute('data-id');
+        const checked = localStorage.getItem(id);
+        cb.checked = checked === 'true';
+      });
+
+      // Save state on change
+      checkboxes.forEach(cb => {
+        cb.addEventListener('change', () => {
+          const id = cb.getAttribute('data-id');
+          localStorage.setItem(id, cb.checked);
+        });
+      });
+    };
+  </script>
+    </body>
+</html>
