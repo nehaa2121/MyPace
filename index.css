@@ -38,7 +38,25 @@ button{
     border-color: brown;
 }
 @media  (max-width: 600px) {
-    body {font-size: 10px;
+    body {font-size: 6px;
     }
-    
+    td{
+        padding:3px;
+    }
+    button{
+         background-color: blanchedalmond;
+    border-radius: 20px;
+    font-size: 10px;
+    border-color: brown;
+    }
+    li{
+        font-size: 10px;
+    }
+    h3{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 15px;
+    }
+
 }
