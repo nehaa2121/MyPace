@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>C++ PROGRAMMING</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+             body{
+                background-color: blanchedalmond;
+            }
+            h1{
+                text-align: center;
+                color: chocolate;
+            }
+            h2{
+                color: burlywood;
+            }
+            h3{
+                color: coral;
+            }
+            pre{
+                background-color: brown;
+                padding: 20px; 
+                border-radius: 20px;
+                color: aliceblue;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>C++ Programming</h1>
+    <h2>✅ C++ Programming Roadmap (Step-by-Step)</h2>
+    <h3>🔹 1. Introduction to C++</h3>
+    <ul>
+        <li>Developed by Bjarne Stroustrup (extension of C)</li>
+        <li>Supports both procedural and object-oriented programming</li>
+        <li>File extension: .cpp</li>
+    </ul>
+    <h3>🔹 2. Basic Syntax</h3>
+    <pre>
+    #include &lt;iostream&gt;  // Input/Output stream
+
+    using namespace std;
+
+    int main() {
+        cout << "Hello, Neha!";
+        return 0;
+}
+</pre>
+<h3>🔹 3. Variables & Data Types</h3>
+<ul>
+    <li>int, float, double, char, string, bool</li>
+    <li>Input/Output: cin and cout</li>
+</ul>
+<pre>
+    int age;
+    cin >> age;
+    cout << "Age is " << age;
+
+</pre>
+<h3>🔹 4. Operators</h3>
+<ul>
+    <li>Same as C: arithmetic, relational, logical, assignment, etc.
+
+</li>
+</ul>
+<h3>🔹 5. Control Statements</h3>
+<ul>
+    <li>if, if-else, switch</li>
+    <li>while, do-while, for</li>
+    <li>break, continue</li>
+</ul>
+<h3>🔹 6. Functions</h3>
+<pre>
+    int add(int a, int b) {
+        return a + b;
+}
+
+</pre>
+<ul>
+<li>Function overloading supported in C++</li>
+</ul>
+<h3>🔹 7. Object-Oriented Programming (OOP) – 🔥 Core of C++</h3>
+<h4>🔸 Key OOP Concepts:</h4>
+<ol>
+    <li>Class & Object</li>
+    <li>Encapsulation</li>
+    <li>Abstraction</li>
+    <li>Inheritance</li>
+    <li>Polymorphism</li>
+</ol>
+<h4>Example: Class and Object</h4>
+<pre>
+    class Student {
+     public:
+       string name;
+       int age;
+
+       void display() {
+        cout << "Name: " << name << ", Age: " << age;
+    }
+};
+
+    int main() {
+        Student s1;
+        s1.name = "Neha";
+        s1.age = 19;
+        s1.display();
+}
+</pre>
+<h3>🔹 8. Constructors and Destructors</h3>
+<ul>
+    <li>constructor: Special function with same name as class</li>
+    <li>destructor: Cleans up (~ClassName())</li>
+</ul>
+<h3>🔹 9. Inheritance</h3>
+<ul>
+    <li>Reusability of code</li>
+</ul>
+<pre>
+    class A {
+    public:
+       void greet() {
+           cout << "Hello from A!";
+    }
+};
+
+    class B : public A {
+    // Inherits greet()
+};
+
+</pre>
+<h3>🔹 10. Polymorphism</h3>
+<ul>
+    <li>compile-time: Function Overloading, Operator Overloading</li>
+    <li>run-time: Virtual Functions</li>
+</ul>
+<h3>🔹 11. File Handling</h3>
+<pre>
+    #include <fstream>
+    ofstream file("demo.txt");
+    file << "Hello Neha!";
+    file.close();
+
+</pre>
+<br><br><hr><br><br>
+<h3>✅ Practice Programs</h3>
+<ol>
+    <li>Swap two numbers using function</li>
+    <li>Create a class Book with attributes and method to display</li>
+    <li>Write program to find area of circle using function overloading</li>
+    <li>Demonstrate inheritance with Person -> Student classes</li>
+    <li>Simple file write and read</li>
+</ol>
+<br><hr><br>
+<h3>✅ MCQs (Quick Test)</h3>
+<h4>Q1. What is the default access modifier for class members in C++?</h4>
+<ol type="A">
+    <li>public</li>
+    <li>private✅ </li>
+    <li>protected</li>
+</ol>
+<h4>Q2. Which of the following supports polymorphism?</h4>
+<ol type="A">
+    <li>Functions only</li>
+    <li> Classes only</li>
+    <li>Classes and Functions✅</li>
+</ol>
+<br><hr><br>
+<h3>✅ Mini Project Ideas</h3>
+<ol>
+    <li>Bank Management System</li>
+    <li>Library System using Class & File</li>
+    <li>Student Result Management using Inheritance</li>
+    <li>Employee Record System</li>
+</ol>
+<br>
+<hr><br>
+<pre>
+    📄 Chapter-wise notes?
+
+📘 Help with a project idea?
+
+💻 A DSA program in C++?
+
+🧠 Explanation of OOP concepts one-by-one?
+</pre>
+ </body>
+</html>
