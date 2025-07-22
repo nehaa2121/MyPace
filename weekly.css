@@ -1,0 +1,42 @@
+body{
+    background-color:antiquewhite;
+    font-size: 25px;
+}
+a{
+    text-decoration: none;
+    color: brown;
+    background-color: bisque;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 30px;
+}
+li{
+    display: inline;
+}
+th{
+    background-color: brown;
+    color: white;
+}
+tr{
+    background-color: bisque;
+    color: chocolate;
+}
+table{
+    padding: 20px 150px 20px 150px;
+    margin: 30px;
+}
+tr{
+    padding: 10px;
+}
+.july{
+    background-color:brown;
+    padding: 20px;
+    color: bisque;
+    border-radius: 10px;
+    margin: 30px;
+    
+}
+h1{
+    text-align: center;
+    color: chocolate;
+}

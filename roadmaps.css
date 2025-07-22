@@ -1,0 +1,26 @@
+body{
+    background-color: beige;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+}
+h3{
+    color:brown;
+    padding:0px;
+}
+header{
+    background-color: rgb(242, 205, 158);
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: chocolate;
+    font-weight: 100;
+    padding: 5px;
+}
+a:hover{
+    background-color: bisque;
+    
+}
+.HOME{
+    background-color: bisque;
+}
