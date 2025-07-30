@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>SQL</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            body{
+                background-color: blanchedalmond;
+            }
+            h1{
+                text-align: center;
+                color: chocolate;
+            }
+            h2{
+                color: burlywood;
+            }
+            h3{
+                color: coral;
+            }
+        </style>
+    </head>
+    <body>
+    <h1>SQL</h1>
+    <h2>✅ SQL Roadmap for Beginners (with Examples)</h2>
+    <h3>🔹 1. What is SQL?</h3>
+    <p>SQL is a language used to interact with databases. You can:</p>
+    <ul>
+        <li>Create tables</li>
+        <li>Insert, update, delete data</li>
+        <li>Query data</li>
+        <li>Manage permissions</li>
+    </ul>
+    <h3>✅ SQL is divided into 5 categories</h3>
+    <pre>
+        | Category                           | Command Examples                  |
+| ---------------------------------- | --------------------------------- |
+| DDL (Data Definition Language)     | `CREATE`, `ALTER`, `DROP`         |
+| DML (Data Manipulation Language)   | `INSERT`, `UPDATE`, `DELETE`      |
+| DQL (Data Query Language)          | `SELECT`                          |
+| DCL (Data Control Language)        | `GRANT`, `REVOKE`                 |
+| TCL (Transaction Control Language) | `COMMIT`, `ROLLBACK`, `SAVEPOINT` |
+    </pre>
+    <h3>🔹 2. Create Table – (DDL)</h3>
+    <pre>
+    CREATE TABLE students (
+       id INT PRIMARY KEY,
+       name VARCHAR(50),
+       age INT
+);
+    </pre>
+    <h3>🔹 3. Insert Data – (DML)</h3>
+    <pre>
+    INSERT INTO students (id, name, age)
+    VALUES (1, 'Neha', 19);
+    </pre>
+    <h3>🔹 4. Select Data – (DQL)</h3>
+    <pre>
+    SELECT * FROM students;
+    SELECT name FROM students WHERE age > 18;
+    </pre>
+    <h3>🔹 5. Update & Delete – (DML)</h3>
+    <pre>
+    UPDATE students SET age = 20 WHERE id = 1;
+
+    DELETE FROM students WHERE id = 1;
+    </pre>
+    <h3>🔹 6. Constraints</h3>
+    <ul>
+      <li>PRIMARY KEY: Uniquely identifies rows</li>
+      <li>FOREIGN KEY: Links to another table</li>
+      <li>UNIQUE, NOT NULL, CHECK, DEFAULT</li>  
+    </ul>
+    <pre>
+    CREATE TABLE marks (
+      student_id INT,
+      subject VARCHAR(20),
+      marks INT CHECK (marks >= 0)
+);  
+    </pre>
+    <h3>🔹 7. SQL Joins</h3>
+    <pre>
+        | Type       | Use                                |
+| ---------- | ---------------------------------- |
+| INNER JOIN | Common rows in both tables         |
+| LEFT JOIN  | All from left + matched from right |
+| RIGHT JOIN | All from right + matched from left |
+| FULL JOIN  | All from both tables               |
+  </pre>
+  <pre>
+    SELECT students.name, marks.marks
+    FROM students
+    INNER JOIN marks
+    ON students.id = marks.student_id;
+  </pre>
+  <h3>🔹 8. Group By & Aggregate Functions</h3>
+  <pre>
+    SELECT subject, AVG(marks) AS average_marks
+    FROM marks
+    GROUP BY subject;
+  </pre>
+  <ul>
+    <li>functions: COUNT(), SUM(), AVG(), MIN(), MAX()</li>
+  </ul>
+  <h3>🔹 9. Subqueries & Nested SELECT</h3>
+  <pre>
+    SELECT name FROM students
+    WHERE age = (SELECT MAX(age) FROM students);
+  </pre>
+  <h3>🔹 10. Order, Limit, Between, Like</h3>
+  <pre>
+    SELECT * FROM students ORDER BY age DESC;
+
+    SELECT * FROM students WHERE name LIKE 'N%';
+
+    SELECT * FROM students WHERE age BETWEEN 18 AND 22;
+  </pre>
+  <br><br><hr><br><br>
+  <h3>✅ Practice Mini Tasks</h3>
+  <ol>
+    <li>Create a table for employees</li>
+    <li>Insert at least 3 records</li>
+    <li>Write a query to:</li>
+    <ul>
+        <li>Show all employees</li>
+        <li>Show employees with age > 25</li>
+        <li>Update an employee's salary</li>
+        <li>Delete one record</li>
+    </ul>
+  </ol>
+  <br><hr><br>
+  <h3>✅ MCQs for SQL (with Answers)</h3>
+  <ol>
+    <li>Which command is used to remove a table from a database?</li>
+ 
+  <ol type="A">
+    <li>REMOVE</li>
+    <li>DROP✅</li>
+    <li>DELETE</li>
+    <li>ERASE</li>
+  </ol> 
+  <li>What is the default sorting order in ORDER BY clause?</li>
+  <ol>
+    <li>Ascending✅ </li>
+    <li>Descending</li>
+    <li>Random</li>
+    <li>Depends on DBMS</li>
+  </ol>
+</ol>
+<br><hr><br>
+<pre>
+    🎯 What would you like next?
+📘 SQL questions for practice?
+
+💻 A full mini project in SQL?
+
+📝 Real-world SQL queries?
+
+✅ Chapter-wise DBMS + SQL notes?
+
+
+</pre>
+    </body>
+</html>
