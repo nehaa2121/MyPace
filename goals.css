@@ -1,41 +1,49 @@
 body{
-    background-color: beige;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 25px;
+    background-color: rgb(245, 230, 238);
+    margin: auto;
+    font-family: monospace;
+    color: rgb(56, 3, 12);
 }
 h3{
-     color:brown;
-    padding:0px;
+    color: brown;
+    font-size: 30px;
 }
 header{
-     background-color: rgb(242, 205, 158);
+    background-color: burlywood;
+    margin: 0%;
+}
+nav{
     padding: 20px;
+    font-size: 20px;
 }
-a{
-      text-decoration: none;
+.a{
+    text-decoration:none;
     color: chocolate;
-    font-weight: 100;
-    padding: 5px;
-}
-a:hover{
-     background-color: bisque;
-}
-h2{
-    color:crimson;
-}
-.main{
-    background-color: rgb(219, 126, 126);
+    background-color: bisque;
     border-radius: 10px;
     padding: 10px;
 }
+.a:hover{
+    background-color: burlywood;
+}
+a{
+    text-decoration: none;
+    color: khaki;
+   margin-bottom: 20px;
+   
+}
+a:hover{
+    color: rgb(86, 78, 8);
+}
+.main{
+    background-color: crimson;
+    padding: 20px;
+    margin:10px;
+    border-radius: 10px;
+}
+h2{
+    color:darksalmon;
+}
 li{
-        font-size: 15px;
-        color:brown;
-        background-color: bisque;
-        border-radius: 10px;
-        padding: 10px;
-        margin: 10px;
-    }
-    .HOME{
-        background-color: bisque;
-    }
+    color:khaki;
+}

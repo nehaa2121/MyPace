@@ -1,0 +1,32 @@
+body{
+    background-color: antiquewhite;
+    margin: 20px;
+}
+h1{
+    background-color: burlywood;
+    color: brown;
+    padding: 20px;
+    text-align: center;
+    border-radius: 30px;
+    font-family: verdana;
+}
+h2{
+    color: brown;
+    margin: 20px;
+    font-family: verdana;
+    text-align: center;
+}
+h3{
+    background-color: brown;
+    padding: 10px;
+    border-radius: 10px;
+    color: antiquewhite;
+    font-family: verdana;
+}
+li{
+    color: chocolate;
+    font-weight: bold;
+    font-size: 20px;
+    margin: 10px;
+    font-family: Verdana;
+}
