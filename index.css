@@ -68,8 +68,8 @@ header{
     padding: 0px;
 }
 nav{
-     font-size: 5px;
-     padding: 10px;
+     font-size: 15px;
+     padding: 15px;
      margin: 0%;
      overflow-x:auto;
      white-space: nowrap;
@@ -81,7 +81,7 @@ nav::-webkit-scrollbar{
     text-decoration:none;
     color: chocolate;
     background-color: bisque;
-    padding: 6px;
+    padding: 15px;
     margin: 0px;
 }
 h2{
