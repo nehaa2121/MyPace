@@ -1,0 +1,19 @@
+body{
+    background-color: cornsilk;
+    color: brown;
+}
+h1{
+    background-color: burlywood;
+    padding: 10px;
+    margin: 5px;
+    border-radius:20px;
+    text-align: center;
+    color: beige;
+}
+h2{
+    background-color: brown;
+    color: azure;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
