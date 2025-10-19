@@ -30,3 +30,10 @@ li{
     margin: 10px;
     font-family: Verdana;
 }
+a{
+    color: chocolate;
+    text-decoration: none;
+}
+a:hover{
+    color: brown;
+}
