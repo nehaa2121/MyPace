@@ -7,7 +7,6 @@ body{
 }
 h3{
     color: brown;
-    font-size: 30px;
 }
 header{
     background-color: burlywood;
@@ -16,23 +15,28 @@ header{
 nav{
     padding: 10px;
     font-size: 20px;
+    text-align: center;
 }
 .a{
     text-decoration:none;
     color: chocolate;
     background-color: bisque;
-     padding: 10px;
+    padding: 10px;
 }
 .a:hover{
     background-color: burlywood;
 }
 a{
     text-decoration: none;
-    color: blanchedalmond;
+    color: rgb(100, 63, 8);
 }
 h2{
-    color: crimson;
-    font-size: 30px;
+    color: rgb(102, 37, 50);
+    background-color: rgb(156, 131, 99);
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+
 }
 .tasks{
     background-color: blanchedalmond;
@@ -55,53 +59,7 @@ button:hover{
     margin: 10px;
 }
 table{
-    font-size: 20px;
-}
-@media (max-width:768px){
-    h3{
-    color: brown;
-    font-size: 35px;
-}
-header{
-    background-color: burlywood;
-    margin: 0px;
-    padding: 0px;
-}
-nav{
-     font-size: 20px;
-     padding: 10px;
-     margin: 0%;
-     overflow-x:auto;
-     white-space: nowrap;
-}
-nav::-webkit-scrollbar{
-    display: none;
-}
-    .a{
-    text-decoration:none;
-    color: chocolate;
-    background-color: bisque;
-    padding: 15px;
-    margin: 0px;
-}
-h2{
-    color: crimson;
-    font-size: 25px;
-}
-.tasks{
-    background-color: blanchedalmond;
-    padding: 6px;
+    margin: 10px;
     text-align: center;
-}
-table{
-    font-size: 6px;
-}
-button{
-    padding:20px;
-    background-color: brown;
-    border-radius: 10px;
-    border: none;
-    font-size:18px;
-    margin:12px;
-}
+
 }
